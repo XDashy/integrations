@@ -22,15 +22,3 @@ describe('Twino', () => {
     expect(overview).toMatchSnapshot();
   });
 });
-
-// describe('parsing profile overview', () => {
-//   const document = fs.readFileSync(`${__dirname}/http/overview-block.html`, 'utf-8');
-
-//   it('parse success case', () => {
-//     expect(parseOverviewPage(document)).toMatchSnapshot();
-//   });
-
-//   it('parse net annual return overview', () => {
-//     expect(parseBalanceOverview(document)).toMatchSnapshot();
-//   });
-// });
