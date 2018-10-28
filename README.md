@@ -3,8 +3,8 @@
 
 Modules for scraping crowdfunding sites:
 
- - Mintos
- - Twino
+ - Mintos ✅
+ - Twino ✅
  - Estateguru
  - Crowdestate
  - Investly
