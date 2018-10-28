@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html class="en" prefix="og: http://ogp.me/ns#"><head><script>
+    var justLoggedIn = false;
+    var isJustRegistered = false;
+</script><style>.async-hide { opacity: 0 !important} </style><script>
+        // initialize dataLayer
+        dataLayer = [];
+
+        // page-hiding snippet
+        (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document.documentElement,'async-hide','dataLayer',4000,
+            {'GTM-TKPMMBQ':true});
+
+        // include google analytics script
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        // initialize google optimize
+        ga('create', 'UA-53926147-5', 'auto');
+        ga('require', 'GTM-TKPMMBQ');
+
+        // initialize google tag manager
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NVZNR3');
+    </script><title>Overview | Mintos | Peer to Peer Lending, P2P Investing</title><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="msapplication-config" content="none" /><meta name="theme-color" content="#78c8c7" /><link rel="alternate" hreflang="cs" href="/cs/prehled-uctu/" /><link rel="alternate" hreflang="de" href="/de/ubersicht/" /><link rel="alternate" hreflang="es" href="/es/general/" /><link rel="alternate" hreflang="lv" href="/lv/kopsavilkums/" /><link rel="alternate" hreflang="pl" href="/pl/przeglad/" /><link rel="alternate" hreflang="ru" href="/ru/svodka/" /><meta name="description" content="Mintos is a peer-to-peer lending marketplace. It connects retail investors with borrowers of many loan originators. Invest in loans and earn money online."><meta property="og:description"
+                  content="Mintos is a peer-to-peer lending marketplace. It connects retail investors with borrowers of many loan originators. Invest in loans and earn money online." /><meta name="twitter:description"
+                  content="Mintos is a peer-to-peer lending marketplace. It connects retail investors with borrowers of many loan originators. Invest in loans and earn money online."><meta property="og:title" content="Overview | Mintos | Peer to Peer Lending, P2P Investing" /><meta property="og:type" content="website" /><meta property="og:url" content="https://www.mintos.com/en/overview/" /><meta property="og:image" content="https://www.mintos.com/mintos-logo-250x250.png" /><meta property="og:image:alt" content="mintosLogoAltText" /><meta property="og:image:width" content="250"/><meta property="og:image:height" content="250"/><meta property="og:site_name" content="AS Mintos Marketplace"/><meta name="twitter:widgets:csp" content="on"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Overview | Mintos | Peer to Peer Lending, P2P Investing"><meta name="twitter:image" content="https://www.mintos.com/mintos-logo-250x250.png"><meta name="twitter:image:alt" content="mintosLogoAltText"><meta name="twitter:image:width" content="250"><meta name="twitter:image:height" content="250"><meta name="twitter:site" content="@MintosPlatform"><link rel="icon" type="image/x-icon" href="/favicon.ico" /><link rel="stylesheet" href="/css/306cff6-1a4d167.css" /><link rel="stylesheet" href="/css/b7f1030-c5279b6.css" /><script>
+    var currencies = "[{\"iso\":978,\"exponent\":2,\"abbreviation\":\"EUR\",\"symbol\":\"\\u20ac\"},{\"iso\":203,\"exponent\":2,\"abbreviation\":\"CZK\",\"symbol\":\"K\\u010d\"},{\"iso\":985,\"exponent\":2,\"abbreviation\":\"PLN\",\"symbol\":\"z\\u0142\"},{\"iso\":208,\"exponent\":2,\"abbreviation\":\"DKK\",\"symbol\":\"kr\"},{\"iso\":981,\"exponent\":2,\"abbreviation\":\"GEL\",\"symbol\":\"\\u10da\"},{\"iso\":946,\"exponent\":2,\"abbreviation\":\"RON\",\"symbol\":\"lei\"},{\"iso\":826,\"exponent\":2,\"abbreviation\":\"GBP\",\"symbol\":\"\\u00a3\"},{\"iso\":752,\"exponent\":2,\"abbreviation\":\"SEK\",\"symbol\":\"kr\"},{\"iso\":643,\"exponent\":2,\"abbreviation\":\"RUB\",\"symbol\":\"\\u20bd\"},{\"iso\":398,\"exponent\":2,\"abbreviation\":\"KZT\",\"symbol\":\"\\u20b8\"},{\"iso\":840,\"exponent\":2,\"abbreviation\":\"USD\",\"symbol\":\"$\"},{\"iso\":484,\"exponent\":2,\"abbreviation\":\"MXN\",\"symbol\":\"Mex\"}]";
+	var currency_separator = " ";
+	var currency_position_left = true;
+	var thousand_separator = " ";
+	var decimal_point = ".";
+
+	var dateFormat = "d.m.Y";
+	var dateTimeFormat = "d.m.Y. H:i";
+    var dateTimeFormatShort = "d.m.Y H:i";
+	var dateFormatMoment = "DD.MM.YYYY";
+	var dateTimeFormatMoment = "DD.MM.YYYY HH:mm:ss";
+	var dateTimeFormatMomentMinutes = "DD.MM.YYYY HH:mm";
+	var dbDateFormat = "Y-m-d";
+	var dbDateTimeFormat = "Y-m-d H:i:s";
+
+	var currentLocale = "en";
+	var locales = ["cs","de","en","es","lv","pl","ru"];
+	var localesChoice = {"cs":"\u010cesk\u00fd","de":"Deutsch","en":"English","es":"Espa\u00f1ol","lv":"Latvie\u0161u","pl":"Polski","ru":"\u0420\u0443\u0441\u0441\u043a\u0438\u0439"};
+
+	var pluralizationForms = {
+		"en": function(n) { return parseInt(n!=1?1:0); }
+		,"lv": function(n) { return parseInt(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2); }
+		,"ru":  function(n) { return parseInt(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2); }
+        ,"de": function(n) { return parseInt(n!=1?1:0); }
+	};
+
+	var translations = {
+		plurals: {
+			date: {
+				months: "month|months"
+				,on_months: "month|months"
+				,years: "year|years"
+				,on_years: "year|years"
+			}
+		}
+		,conjunctions: {
+			"and": "&"
+		}
+		,prepositions: {
+			"from": "from"
+			,"to": "to"
+			, "of": "of"
+		}
+		,confirms: {
+			"are_you_sure": "Delete this Auto Invest portfolio?"
+		}
+		,errors: {
+						"required": "Please fill in the field."
+			,"length_min_max": "Length must be between  %min% and %max% characters"
+			,"length_min_only": "Length must be at least %min% characters"
+			,"length_max_only": "Field must not be longer than %max% characters"
+			,"nosymbols": "This field may not contain special symbols. Unsupported symbols: %symbols_found%"
+			,"email": "This e-mail address is not valid."
+			,"email_exists": "This e-mail address is already registered!"
+			,"numbers": "Please fill in the field using only numbers."
+			,"registration_nr_exists": "User with this registration number is already registered."
+			,"pcode_exists": "User with this personal identification number is already registered!"
+			,"either": "Please indicate the property address!"
+			,"password": "Password must contain both letters and numbers"
+			,"password_length": "Password length must be %min% - %max% characters and include both letters and numbers"
+			,"password_oldpass_must_be_entered": "Please fill in the field."
+			,"agreement_borrower": "Please confirm that the provided information is accurate"
+			,"agreement_investor": "Please confirm that you accept the investment terms and conditions."
+			,"upload_limit": "Too many files selected"
+			,"equals": {
+				"password": "errors.equals.password"
+			}
+			,"payout": {
+				"not_enough_funds": "Your account does not have sufficient funds in the corresponding currency."
+			}
+		}
+		,form: {
+			password: {
+				show: "Show Password"
+				,hide: "Hide Password"
+                ,existing: "Current password"
+                ,new: "New Password"
+                ,title: "Password"
+			}
+			,multiple_choice: {
+				chosen: "Selected:%SELECTED%/%TOTAL%"
+				,check_uncheck_all: "Select/Clear All"
+			}
+		}
+		,misc: {
+			"next_tip": "Next"
+			,"prev_tip": "Previous"
+			,"close_tip": "close_tip"
+			,"pager_page_listing": "{page} of {totalPages}"
+		}
+		,tooltip: {
+            "investedSumAmount": "Principal that will be purchased %AMOUNT%"
+            ,"copy": "Copy"
+            ,"copySuccess": "Copied"
+		}
+	};
+</script><script>
+    var urlList = {
+        "investor": {
+            "basket_update": "/en/investor/basket-data/",
+            "basket_remove": "/en/loan/remove-from-basket/",
+            "autoinvest_toggle": "/en/auto-invest/toggle/",
+            "autoinvest_delete": "/en/auto-invest/delete/",
+            "autoinvest_summary": "/en/auto-invest/summary/",
+            "update_settings": "/en/investor/update-settings",
+            "update_notification_settings": "/en/investor/update-notification-settings",
+            "set_google_client_id": "/en/investor/set-google-client-id",
+            "load_scripts": "/en/tracking-scripts"
+        },
+        "registration": {
+            "validate": "/en/registration/validate",
+            "pre_register": "/en/registration/pre_register"
+        }
+    };
+</script><link rel="stylesheet" href="/css/372aaab-04ca345.css" /></head><body class=""><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVZNR3"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --><div id="main-wrapper"><div id="main-sub-wrapper"><div id="header-wrapper" class="header-wrapper"><div id="header-informative-row"><div class="m-container"><p>Introducing Mintos Ratings.  <a href="/en/mintos-ratings/" target="_blank">Find out more</a></p><button class="dismiss" type="button"></button></div></div><div id="header" class="header m-container"><a href="/en/" id="logo" class="header-logo"></a><ul id="top-nav-helper" class="investor-nav investor-nav-helper"><li class="main-nav-icon-container"><button type="button" class="button button-plain main-nav-icon js-navigation-toggle"><i class="fas fa-bars" aria-hidden="true"></i></button></li><li class="main-nav-logout-container head"><a href="https://www.mintos.com/en/logout?" class="logout main-nav-logout u-c-gray"><i class="fas fa-power-off"></i></a></li><li class="delimiter"></li><li id="investor-basket-wrapper"><a href="javascript:;" id="header-investment-notifications" class="u-c-gray"><i class="fas fa-briefcase"></i><span id="basket-total">0</span></a><div id="investor-basket"><div id="investor-purchases"><h3>Invest</h3><div class="basket-empty">
+            No investments
+        </div><a href="/en/available-loans/"
+       class="btn btn-default">
+        Add Investments
+    </a><a href="/en/review-investments/"
+       class="btn btn-primary hidden">
+
+        Review and Approve
+    </a><a href="javascript:;"
+       id="empty-investments-cart-button"
+       data-basket-type="investments"
+       data-url-empty="/en/investment/empty-purchases-basket/"
+       class="empty-cart-button hidden">
+        Remove All
+    </a><div class="placeholder">&nbsp;</div></div><div id="investor-sales" class="hidden"><h3>Sell</h3><a href="/en/apstiprinat-aizdevumu-izvietosanu-otrreizeja-tirgu/" class="btn btn-primary">
+        Review and Approve
+    </a><a href="javascript:;"
+       id="empty-sales-cart-button"
+       data-basket-type="sales"
+       data-url-empty="/en/investment/empty-sales-basket/"
+       class="empty-cart-button">
+        Remove All
+    </a></div></div></li><li class="delimiter"></li><li id="investor-username-wrapper"><a href="javascript:;" id="header-username" class="investor-nav-username">
+                    Miku
+                </a><ul id="investor-dropdown"><li><a href="/en/campaigns/">
+                                Campaigns
+                            </a></li><li><a href="/en/tax-report/">
+                                Tax Report
+                            </a></li><li><a href="/en/my-settings/">
+                                My Settings
+                            </a></li></ul></li><li><a id="header-balance-link" href="/en/transactions/deposit/"><div id="header-balance"><span id="sel-header-balance" class="js-header-balance m-header-balance">
+                            ( <span title="EUR">€</span> 0.01 )
+                        </span></div></a></li></ul></div></div><div id="nav-block" class="main-nav "><div id="nav-wrapper" class="main-nav-wrapper"><div id="nav-sub-wrapper" class="m-container"><ul id="main-nav" class="navigation menu main-nav-list investor-menu removable"><li class="main-nav-logout-container nav"><a href="https://www.mintos.com/en/logout?" class="logout main-nav-logout u-c-gray"><i class="fas fa-power-off"></i></a></li><li class="main-nav-item active has-open-subnav"><a href="/en/overview/" class="main-nav-link">
+                                Overview
+                            </a></li><li class="main-nav-item "><a href="/en/available-loans/" class="main-nav-link">
+                                Loan Listings
+                            </a><button type="button" class="m-submenu-toggle-btn js-submenu-toggle"><i class="fas fa-angle-down" aria-hidden="true"></i><i class="fas fa-angle-up" aria-hidden="true"></i></button><div class="m-submenu"><div id="submenu-sub-wrapper" class="m-submenu-sub-wrapper m-container"><ul id="submenu" class="m-submenu-list"><li class="m-submenu-item"><a href="/en/available-loans/primary-market/" class="m-submenu-link ">
+                            Primary Market
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/available-loans/secondary-market/" class="m-submenu-link ">
+                            Secondary Market
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/available-loans/loan-originators-login/" class="m-submenu-link ">
+                            Loan Originators
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/available-loans/mintos-ratings-en/" class="m-submenu-link ">
+                            Mintos Ratings
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/available-loans/statistics/" class="m-submenu-link ">
+                            Statistics
+
+                                                    </a></li></ul></div></div></li><li class="main-nav-item "><a href="/en/auto-invest/" class="main-nav-link">
+                                Auto Invest
+                            </a></li><li class="main-nav-item "><a href="/en/account-statement/" class="main-nav-link">
+                                Account Statement
+                            </a></li><li class="main-nav-item "><a href="/en/my-investments/" class="main-nav-link">
+                                My Investments
+                            </a><button type="button" class="m-submenu-toggle-btn js-submenu-toggle"><i class="fas fa-angle-down" aria-hidden="true"></i><i class="fas fa-angle-up" aria-hidden="true"></i></button><div class="m-submenu"><div id="submenu-sub-wrapper" class="m-submenu-sub-wrapper m-container"><ul id="submenu" class="m-submenu-list"><li class="m-submenu-item"><a href="/en/my-investments/current-investments/" class="m-submenu-link ">
+                            Current Investments
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/my-investments/finished-investments/" class="m-submenu-link ">
+                            Finished Investments
+
+                                                    </a></li></ul></div></div></li><li class="main-nav-item "><a href="/en/transactions/" class="main-nav-link">
+                                Deposit / Withdraw / FX
+                            </a><button type="button" class="m-submenu-toggle-btn js-submenu-toggle"><i class="fas fa-angle-down" aria-hidden="true"></i><i class="fas fa-angle-up" aria-hidden="true"></i></button><div class="m-submenu"><div id="submenu-sub-wrapper" class="m-submenu-sub-wrapper m-container"><ul id="submenu" class="m-submenu-list"><li class="m-submenu-item"><a href="/en/transactions/deposit/" class="m-submenu-link ">
+                            Deposit
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/transactions/withdraw/" class="m-submenu-link ">
+                            Withdraw
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/transactions/currency-exchange/" class="m-submenu-link ">
+                            Currency Exchange
+
+                                                    </a></li></ul></div></div></li></ul></div></div></div><script src="/js/cdd2c70-8e660b6.js"></script><div id="content" class="top-padded"><div class="js-overview-vm m-container" id="withdraw" v-cloak><h1 class="padded">
+			Overview
+		</h1><div></div><ul id="mintos-boxes" class="m-overview-boxes"
+					v-bind="bindTabs('978')"
+					v-bind:class="{ 'is-active': activeTab === '978' }"><li class="overview-box"><div><div class="header"><h2 class="title">
+									Account Balance
+								</h2><div class="value">
+									€ 2 012.21
+								</div></div><table class="data"><tr><td>Available Funds</td><td>€ 0.01</td></tr><tr><td>Invested Funds</td><td>€ 2 012.20</td></tr><tr class="em"><td>Total</td><td>€ 2 012.21</td></tr></table><div class="btn-container mod-pb"><a href="/en/transactions/deposit/" class="btn btn-primary">
+									Add Funds
+								</a></div></div></li><li class="overview-box"><div><div class="header"><h2 class="title">
+									Net Annual Return
+
+    <i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Net annualised return (NAR) is an annualised measure of the rate of return of the actual investments made in loans, after actual write-offs and  service charges."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></h2><div class="value">
+									11.3%
+								</div></div><table class="data"><tr><td>Interest</td><td>€ 300.88</td></tr><tr><td>Late Payment Fees</td><td>€ 0.89</td></tr><tr><td>Bad Debt</td><td>€ -9.1</td></tr><tr><td>
+                                        Secondary Market Transactions
+
+    <i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="This value shows the total profit or loss that is made whilst investing or selling investments on the Secondary Market.
+&lt;br&gt; &lt;br&gt;
+Examples: &lt;br&gt;
+Investor sells his investment with a discount (loss); &lt;br&gt;
+Investor sells his investment with a premium (profit); &lt;br&gt;
+Investor buys investment in secondary market with a discount (profit); &lt;br&gt;
+Investor buys investment in secondary market with a premium (loss). &lt;br&gt; &lt;br&gt;
+
+When Mintos calculates the value of transactions on the Secondary Market, we include the sum of all of the transactions made so you can see if you have made a profit or loss (or neither a profit or loss, if all investments are bought/sold at par value)."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 0.00</td></tr><tr><td>
+										Service Fees
+
+    <i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Service fees include currency exchange fees and historic fees for investments made before May 14, 2015, as well as for deals on the secondary market made before November 1, 2017."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 0.00</td></tr><tr><td>Campaign Rewards</td><td>
+										€ 0.00
+																			</td></tr><tr class="em"><td>Total Profit</td><td>€ 232.21</td></tr></table><div class="btn-container"><a href="/en/available-loans/" class="btn btn-primary mod-mt-sm">
+									Invest
+								</a><span class="superscript">
+								104652 Loans Available
+							</span></div></div></li><li class="overview-box"><div><div class="header"><h2 class="title">
+									My Investments
+								</h2><div class="value">
+									123
+								</div></div><ul class="m-investment-totals"
+								v-bind:class="{ switched: investmentDataType['978'] == 'number' }"
+								v-bind="bindInvestmentDataType('978', 'amount')"><li><table class="data"><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=256"
+													target="_blank">
+													Current
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="This loan is up to date on all outstanding payments."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 1 841.97</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=262144"
+												   target="_blank">
+                                                    Grace Period
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="The grace period is the technical number of late payment days before the loan is marked as delayed. The grace period is intended to cover possible payment delays caused by bank-to-bank payments, national holidays, and specific policies of the loan originators. The length of it is determined by each loan originator individually."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 28.13</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=512"
+													target="_blank">
+													1-15 Days  Late
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Payments for this loan are 1 to 15 days late."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 49.22</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=1024"
+												   target="_blank">
+													16-30 Days  Late
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Payments for this loan are 16 to 30 days late."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 69.83</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=2048"
+												   target="_blank">
+													31-60 Days Late
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Payments for this loan are 31 to 60 days late."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 23.05</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=8192"
+												   target="_blank">
+													60+ Days  Late
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Payments for this loan are more than 60 days late. There is a reasonable expectation that the borrower will be able to bring the loan back to current status."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 0.00</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=16384"
+												   target="_blank">
+													Default
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="The loan agreement has been terminated and the outstanding balance of the loan is due and payable."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>€ 0.00</td></tr><tr><td><a href="/en/my-investments/finished-investments/?currency=978&statuses[]=65536"
+												   target="_blank">
+													Bad Debt
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="There is no longer a reasonable expectation of further payments on this loan. The remaining principal balance of the loan has been deducted from your account balance."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>(€ 6.93)</td></tr><tr class="em"><td>Total</td><td>€ 2 012.20</td></tr></table></li><li><table class="data"><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=256"
+												   target="_blank">
+                                                    Current
+                                                </a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="This loan is up to date on all outstanding payments."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>214</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=262144"
+												   target="_blank">
+                                                    Grace Period
+												</a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="The grace period is the technical number of late payment days before the loan is marked as delayed. The grace period is intended to cover possible payment delays caused by bank-to-bank payments, national holidays, and specific policies of the loan originators. The length of it is determined by each loan originator individually."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>3</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=512"
+												   target="_blank">
+                                                    1-15 Days  Late
+                                                </a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Payments for this loan are 1 to 15 days late."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>5</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=1024"
+												   target="_blank">
+												    16-30 Days  Late
+                                                </a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Payments for this loan are 16 to 30 days late."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>8</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=2048"
+												   target="_blank">
+                                                    31-60 Days Late
+                                                </a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Payments for this loan are 31 to 60 days late."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>3</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=8192"
+												   target="_blank">
+                                                    60+ Days  Late
+                                                </a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="Payments for this loan are more than 60 days late. There is a reasonable expectation that the borrower will be able to bring the loan back to current status."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>0</td></tr><tr><td><a href="/en/my-investments/current-investments/?currency=978&statuses[]=16384"
+												   target="_blank">
+                                                    Default
+                                                </a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="The loan agreement has been terminated and the outstanding balance of the loan is due and payable."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>0</td></tr><tr><td><a href="/en/my-investments/finished-investments/?currency=978&statuses[]=65536"
+												   target="_blank">
+                                                    Bad Debt
+                                                </a><i class="fas fa-info-circle tooltip-color-mintos "
+       data-tooltip="There is no longer a reasonable expectation of further payments on this loan. The remaining principal balance of the loan has been deducted from your account balance."
+       data-placement="top"
+       data-placement-on-mobile="top"
+       data-theme=""
+       data-tooltip-trigger="hover,click"></i></td><td>(1)</td></tr><tr class="em"><td>Total</td><td>233</td></tr></table></li></ul><div class="radios"><input type="radio"
+									   name="notes_type_978"
+									   id="note-type-amount-978"
+									   value="amount"
+									   checked
+									   v-model="investmentDataType['978']"/><label for="note-type-amount-978">By Amount</label><input type="radio"
+									   name="notes_type_978"
+									   id="note-type-number-978"
+									   value="number"
+									   v-model="investmentDataType['978']"/><label for="note-type-number-978">By Number</label></div></div></li></ul></div><div class="m-container news-feed"><div class="news-feed-inner"><h2 class="title">
+					Recent News
+				</h2><div class="blog-post"><p class="new-feed-date">31.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/mintos-reaches-eur-1-billion-milestone-in-total-loans-funded/" target="_blank">Mintos Reaches EUR 1 Billion Milestone in Total Loans Funded</a></h2></div><div class="blog-post"><p class="new-feed-date">30.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/kviku-from-russia-has-just-launched-on-mintos/" target="_blank">Kviku from Russia has just launched on Mintos</a></h2></div><div class="blog-post"><p class="new-feed-date">28.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/mintos-ratings/" target="_blank">Introducing Mintos Ratings</a></h2></div><div class="blog-post"><p class="new-feed-date">24.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/is-it-the-loan-performance-or-loan-originator-that-matters/" target="_blank">Is it the loan performance or loan originator that matters?</a></h2></div><div class="blog-post"><p class="new-feed-date">22.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/interview-with-martins-sulte-our-goal-is-to-promote-the-free-flow-of-capital-across-country-borders/" target="_blank">Interview with Martins Sulte: our goal is to promote the free flow of capital across country borders</a></h2></div><div class="blog-post"><p class="new-feed-date">17.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/new-structure-for-investments-in-id-finance-loans-issued-in-kazakhstan/" target="_blank">New structure for investments in ID Finance loans issued in Kazakhstan</a></h2></div><div class="blog-post"><p class="new-feed-date">17.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/id-finance-is-increasing-its-presence-in-kazakhstan/" target="_blank">ID Finance is increasing its presence in Kazakhstan</a></h2></div><div class="blog-post"><p class="new-feed-date">15.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/the-first-loan-originator-from-ukraine-has-launched-on-mintos/" target="_blank">The first loan originator from Ukraine has launched on Mintos!</a></h2></div><div class="blog-post"><p class="new-feed-date">14.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/spanish-mortgage-lender-fireof-adds-another-spv-to-mintos/" target="_blank">Spanish mortgage lender FIREOF adds another SPV to Mintos</a></h2></div><div class="blog-post"><p class="new-feed-date">02.08.2018</p><h2 class="new-feed-title"><a href="https://blog.mintos.com/ege-finance-has-just-launched-on-mintos-and-offers-investment-opportunities-in-eur/" target="_blank">EGE Finance has just launched on Mintos and offers investment opportunities in EUR</a></h2></div><a class="all-news-link" target="_blank"
+				   href="https://blog.mintos.com/">All News</a></div></div></div></div><link rel="stylesheet" href="/css/2234c93-d87cdc4.css"/><div id="cookie-agreement" class="js-cookie-agreement"><div class="cookie-agreement-wrapper"><div class="message-wrapper"><span class="message">Please be informed that the Mintos portal uses cookies. Cookies collect information about site visits, helps to improve and ensure the functioning of the portal and offer ads of relevant content. By continuing to use the portal, you acknowledge that you are informed of the use of cookies. Additional cookie information is available in the <a href="https://www.mintos.com/en/cookie-policy/" target="_blank">Cookie Policy</a>.</span></div><div class="accept-wrapper"><button class="accept btn btn-default" type="button">I agree</button></div><button class="dismiss fas fa-times" type="button"></button></div></div><div id="footer-wrapper" class="footer footer-wrapper"><div id="footer" class="footer-container"><div class="footer-top"><div class="m-container"><div class="footer-column"><a class="footer-logo" href="/"><img src="/assets/images/mintos-inverted.png" alt="Mintos logo"></a><ul><li><a href="/en/invest/first-steps/">
+                                For Investors
+                            </a></li><li><a href="/en/for-alternative-lending-companies/">
+                                For Lending Companies
+                            </a></li><li><a href="/en/join-our-affiliate-program-and-earn-money/">
+                                Affiliate Program
+                            </a></li></ul></div><div class="footer-column"><h3>Invest</h3><ul><li><a href="/en/invest/first-steps/">
+                                Getting Started
+                            </a></li><li><a href="/en/loan-originators/">
+                                Loan Originators
+                            </a></li><li><a href="/en/invest/available-loans/">
+                                Primary Market
+                            </a></li><li><a href="/en/invest/secondary-market/">
+                                Secondary Market
+                            </a></li><li><a href="/en/statistics/">
+                                Statistics
+                            </a></li><li><a href="/en/invest/investor-protection/">
+                                Investor Protection
+                            </a></li><li><a href="/en/invest/price-list/">
+                                Fees
+                            </a></li></ul></div><div class="footer-column"><h3>Company</h3><ul><li><a href="/en/about-us/about-us/">
+                                About Us
+                            </a></li><li><a href="/en/how-it-works/">
+                                How It Works
+                            </a></li><li><a href="/en/about-us/investor-relations/">
+                                Investor Relations
+                            </a></li><li><a href="/en/about-us/careers/">
+                                Careers
+                            </a></li><li><a href="/en/about-us/media-center/">
+                                Media Center
+                            </a></li><li><a href="https://blog.mintos.com/">
+                                Blog
+                            </a></li></ul></div><div class="footer-column"><h3>Help &amp; Support</h3><ul><li><a href="tel:+44 157 893 0033"><img src="/assets/vendor/flags/flags-iso/flat/16/GB.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+44 157 893 0033
+                            </a></li><li><a href="tel:+43 720 884 044"><img src="/assets/vendor/flags/flags-iso/flat/16/DE.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+43 720 884 044
+                            </a></li><li><a href="tel:+371 66 164 466"><img src="/assets/vendor/flags/flags-iso/flat/16/LV.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+371 66 164 466
+                            </a></li><li><a href="tel:+371 66 164 488"><img src="/assets/vendor/flags/flags-iso/flat/16/RU.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+371 66 164 488
+                            </a></li><li><a href="tel:+420 538 880 188 "><img src="/assets/vendor/flags/flags-iso/flat/16/CZ.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+420 538 880 188
+                            </a></li><li><a href="tel:+48 22 124 41 00 "><img src="/assets/vendor/flags/flags-iso/flat/16/PL.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+48 22 124 41 00
+                            </a></li><li><a href="tel:+34 518 899 677"><img src="/assets/vendor/flags/flags-iso/flat/16/ES.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+34 518 899 677
+                            </a></li><li><a class="icon support-email" href="/cdn-cgi/l/email-protection#cdbeb8bdbda2bfb98da0a4a3b9a2bee3aea2a0">
+                                <span class="__cf_email__" data-cfemail="45363035352a373105282c2b312a366b262a28">[email&#160;protected]</span>
+                            </a></li><li><a class="icon faq-link" href="/en/faq/">
+                                FAQ
+                            </a></li></ul></div><div class="footer-column"><h3>Follow Mintos</h3><ul><li><a id="facebook"
+                               class="icon"
+                               href="https://www.facebook.com/MintosMarketplace"
+                               target="_blank">
+                                Facebook
+                            </a></li><li><a id="twitter"
+                               class="icon"
+                               href="https://twitter.com/MintosPlatform"
+                               target="_blank">
+                                Twitter
+                            </a></li><li><a id="linked-in"
+                               class="icon"
+                               href="https://www.linkedin.com/company/mintos"
+                               target="_blank">
+                                LinkedIn
+                            </a></li><li><a id="google-plus"
+                               class="icon"
+                               href="//plus.google.com/115951696607274735613"
+                               target="_blank">
+                                Google Plus
+                            </a></li><li><a id="youtube"
+                               class="icon"
+                               href="//youtube.com/channel/UCb3_KUaR6LvLf9vRXz3h30w"
+                               target="_blank">
+                                YouTube
+                            </a></li></ul></div><div class="footer-column"><h3>Mintos Office</h3><ul><li><p class="office-address">AS Mintos Marketplace<br>
+Reg. No. 40103903643<br>
+Skanstes 50<br>
+Riga, LV-1013<br>
+Latvia</p></li></ul></div></div></div><div class="footer-bottom"><div class="m-container"><h3>Member of</h3><div class="m-member-of"><a href="https://www.ahk-balt.org/mitglieder/firmendatenbank/firmendatenbankdetails/?tx_cpsfmp_companymainplugin%5Bswords%5D=mintos&tx_cpsfmp_companymainplugin%5Bindustries%5D=0&tx_cpsfmp_companymainplugin%5Bcountries%5D=0&tx_cpsfmp_companymainplugin%5Bregions%5D=0&tx_cpsfmp_companymainplugin%5Bzips%5D=&tx_cpsfmp_companymainplugin%5Bcities%5D=&tx_cpsfmp_companymainplugin%5Bahkmember%5D=&submit=&tx_cpsfmp_companymainplugin%5Bcompany%5D=17160&tx_cpsfmp_companymainplugin%5Baction%5D=show&tx_cpsfmp_companymainplugin%5Bcontroller%5D=Company&cHash=6da5f6d8915d0a326175f0d6033861b3"
+                       class="m-member-of-logo" target="_blank"><img src="/assets/images/ahk-footer-logo.jpg"
+                             title="The German-Baltic Chamber of Commerce in Estonia, Latvia, Lithuania (AHK Baltic States)"></a><a href="https://www.chamber.lv/" class="m-member-of-logo mod-has-pad" target="_blank"><img src="/assets/images/ltrk-logo.png"
+                             title="Latvian Chamber of Commerce and Industry (LCCI)"></a><a href="http://www.lafpa.lv/" class="m-member-of-logo mod-has-pad" target="_blank"><img src="/assets/images/lafpa-logo.png"
+                             title="The Alternative Financial Services Association of Latvia"></a><a href="http://4fintech.org/" class="m-member-of-logo mod-has-pad ml-m4" target="_blank"><img src="/assets/images/EFF.png" title="European Fintech Forum (EFF)"></a><a href="https://asociacionfintech.es/" class="m-member-of-logo aefi" target="_blank"><img src="/assets/images/AEFI.png"
+                             title="Spanish Fintech and Insurtech Association"></a></div><div class="m-small-links"><a class="footer-link has-hover"
+                       href="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/4059F754-16F1-B5CA-E34A-45B2855B195E.pdf"
+                       target="_blank">
+                        User Agreement
+                    </a><a class="footer-link has-hover"
+                       href="/en/privacy-policy/"
+                       target="_blank">
+                        Privacy policy
+                    </a><a class="footer-link has-hover"
+                       href="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/F7B8B3B9-8DDB-D70F-3EA2-1EA54E08796F.pdf"
+                       target="_blank">
+                        Refer-a-Friend T&amp;C
+                    </a></div><div class="footnote"><p>
+                        © 2018 All rights reserved.
+                        By using our website you agree to the use of cookies in accordance with our <a href="/en/cookie-policy/">cookies policy.</a></p></div><div id="lang-select-wrapper"><div id="current-lang"><img src="/assets/vendor/flags/flags-iso/flat/16/GB.png"
+                             alt="English"
+                        />
+                        English
+                    </div><ul id="lang-select"><li><a href="/cs/prehled-uctu/"><img src="/assets/vendor/flags/flags-iso/flat/16/CZ.png"
+                                             alt="Český"
+                                        />
+                                        Český
+                                    </a></li><li><a href="/de/ubersicht/"><img src="/assets/vendor/flags/flags-iso/flat/16/DE.png"
+                                             alt="Deutsch"
+                                        />
+                                        Deutsch
+                                    </a></li><li><a href="/es/general/"><img src="/assets/vendor/flags/flags-iso/flat/16/ES.png"
+                                             alt="Español"
+                                        />
+                                        Español
+                                    </a></li><li><a href="/lv/kopsavilkums/"><img src="/assets/vendor/flags/flags-iso/flat/16/LV.png"
+                                             alt="Latviešu"
+                                        />
+                                        Latviešu
+                                    </a></li><li><a href="/pl/przeglad/"><img src="/assets/vendor/flags/flags-iso/flat/16/PL.png"
+                                             alt="Polski"
+                                        />
+                                        Polski
+                                    </a></li><li><a href="/ru/svodka/"><img src="/assets/vendor/flags/flags-iso/flat/16/RU.png"
+                                             alt="Русский"
+                                        />
+                                        Русский
+                                    </a></li></ul></div></div></div></div></div></div><div class="modal fade" id="multi-purpose-modal" tabindex="-1" role="dialog" aria-labelledby="multi-purpose-modal-title" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="multi-purpose-modal-title"></h4></div><div class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/a275295-10deffa.js"></script><script src="/js/70def04-56392d0.js"></script><script src="/js/e29c7e9-22af920.js"></script><script src="/js/c44accf-5c54aaa.js"></script><script src="/js/33fed05-2cd5de3.js"></script><script>/*<![CDATA[*/
+        window.zEmbed || function (e, t) {
+            var n, o, d, i, s, a = [], r = document.createElement("iframe");
+            window.zEmbed = function () {
+                a.push(arguments)
+            }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document;
+            try {
+                o = s
+            } catch (c) {
+                n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s
+            }
+            o.open()._l = function () {
+                var o = this.createElement("script");
+                n && (this.domain = n), o.id = "js-iframe-async", o.src = e, this.t = +new Date, this.zendeskHost = t, this.zEQueue = a, this.body.appendChild(o)
+            }, o.write('<body onload="document._l();">'), o.close()
+        }("//assets.zendesk.com/embeddable_framework/main.js", "mintos.zendesk.com");
+        /*]]>*/</script></body></html>

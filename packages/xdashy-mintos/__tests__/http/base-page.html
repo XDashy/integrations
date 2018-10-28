@@ -1,0 +1,1030 @@
+
+<!DOCTYPE html>
+<html class="en" prefix="og: http://ogp.me/ns#"><head><script>
+    var justLoggedIn = false;
+    var isJustRegistered = false;
+</script><style>.async-hide { opacity: 0 !important} </style><script>
+        // initialize dataLayer
+        dataLayer = [];
+
+        // page-hiding snippet
+        (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+            h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+            (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document.documentElement,'async-hide','dataLayer',4000,
+            {'GTM-TKPMMBQ':true});
+
+        // include google analytics script
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        // initialize google optimize
+        ga('create', 'UA-53926147-5', 'auto');
+        ga('require', 'GTM-TKPMMBQ');
+
+        // initialize google tag manager
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NVZNR3');
+    </script><title>    Mintos Marketplace for Loans | Peer to Peer Lending, P2P Investing
+</title><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="msapplication-config" content="none" /><meta name="theme-color" content="#78c8c7" /><meta name="description" content="Mintos is a peer-to-peer lending marketplace. It connects retail investors with borrowers of many loan originators. Invest in loans and earn money online."><meta property="og:description"
+                  content="Mintos is a peer-to-peer lending marketplace. It connects retail investors with borrowers of many loan originators. Invest in loans and earn money online." /><meta name="twitter:description"
+                  content="Mintos is a peer-to-peer lending marketplace. It connects retail investors with borrowers of many loan originators. Invest in loans and earn money online."><meta property="og:title" content="    Mintos Marketplace for Loans | Peer to Peer Lending, P2P Investing
+" /><meta property="og:type" content="website" /><meta property="og:url" content="https://www.mintos.com/en/" /><meta property="og:image" content="https://www.mintos.com/mintos-logo-250x250.png" /><meta property="og:image:alt" content="mintosLogoAltText" /><meta property="og:image:width" content="250"/><meta property="og:image:height" content="250"/><meta property="og:site_name" content="AS Mintos Marketplace"/><meta name="twitter:widgets:csp" content="on"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content=""><meta name="twitter:image" content="https://www.mintos.com/mintos-logo-250x250.png"><meta name="twitter:image:alt" content="mintosLogoAltText"><meta name="twitter:image:width" content="250"><meta name="twitter:image:height" content="250"><meta name="twitter:site" content="@MintosPlatform"><link rel="icon" type="image/x-icon" href="/favicon.ico" /><link rel="stylesheet" href="/css/306cff6-1a4d167.css" /><link rel="stylesheet" href="/css/d514bda-0e4c6ef.css"/><script>
+    var currencies = "[{\"iso\":978,\"exponent\":2,\"abbreviation\":\"EUR\",\"symbol\":\"\\u20ac\"},{\"iso\":203,\"exponent\":2,\"abbreviation\":\"CZK\",\"symbol\":\"K\\u010d\"},{\"iso\":985,\"exponent\":2,\"abbreviation\":\"PLN\",\"symbol\":\"z\\u0142\"},{\"iso\":208,\"exponent\":2,\"abbreviation\":\"DKK\",\"symbol\":\"kr\"},{\"iso\":981,\"exponent\":2,\"abbreviation\":\"GEL\",\"symbol\":\"\\u10da\"},{\"iso\":946,\"exponent\":2,\"abbreviation\":\"RON\",\"symbol\":\"lei\"},{\"iso\":826,\"exponent\":2,\"abbreviation\":\"GBP\",\"symbol\":\"\\u00a3\"},{\"iso\":752,\"exponent\":2,\"abbreviation\":\"SEK\",\"symbol\":\"kr\"},{\"iso\":643,\"exponent\":2,\"abbreviation\":\"RUB\",\"symbol\":\"\\u20bd\"},{\"iso\":398,\"exponent\":2,\"abbreviation\":\"KZT\",\"symbol\":\"\\u20b8\"},{\"iso\":840,\"exponent\":2,\"abbreviation\":\"USD\",\"symbol\":\"$\"},{\"iso\":484,\"exponent\":2,\"abbreviation\":\"MXN\",\"symbol\":\"Mex\"}]";
+	var currency_separator = " ";
+	var currency_position_left = true;
+	var thousand_separator = " ";
+	var decimal_point = ".";
+
+	var dateFormat = "d.m.Y";
+	var dateTimeFormat = "d.m.Y. H:i";
+    var dateTimeFormatShort = "d.m.Y H:i";
+	var dateFormatMoment = "DD.MM.YYYY";
+	var dateTimeFormatMoment = "DD.MM.YYYY HH:mm:ss";
+	var dateTimeFormatMomentMinutes = "DD.MM.YYYY HH:mm";
+	var dbDateFormat = "Y-m-d";
+	var dbDateTimeFormat = "Y-m-d H:i:s";
+
+	var currentLocale = "en";
+	var locales = ["cs","de","en","es","lv","pl","ru"];
+	var localesChoice = {"cs":"\u010cesk\u00fd","de":"Deutsch","en":"English","es":"Espa\u00f1ol","lv":"Latvie\u0161u","pl":"Polski","ru":"\u0420\u0443\u0441\u0441\u043a\u0438\u0439"};
+
+	var pluralizationForms = {
+		"en": function(n) { return parseInt(n!=1?1:0); }
+		,"lv": function(n) { return parseInt(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2); }
+		,"ru":  function(n) { return parseInt(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2); }
+        ,"de": function(n) { return parseInt(n!=1?1:0); }
+	};
+
+	var translations = {
+		plurals: {
+			date: {
+				months: "month|months"
+				,on_months: "month|months"
+				,years: "year|years"
+				,on_years: "year|years"
+			}
+		}
+		,conjunctions: {
+			"and": "&"
+		}
+		,prepositions: {
+			"from": "from"
+			,"to": "to"
+			, "of": "of"
+		}
+		,confirms: {
+			"are_you_sure": "Delete this Auto Invest portfolio?"
+		}
+		,errors: {
+						"required": "Please fill in the field."
+			,"length_min_max": "Length must be between  %min% and %max% characters"
+			,"length_min_only": "Length must be at least %min% characters"
+			,"length_max_only": "Field must not be longer than %max% characters"
+			,"nosymbols": "This field may not contain special symbols. Unsupported symbols: %symbols_found%"
+			,"email": "This e-mail address is not valid."
+			,"email_exists": "This e-mail address is already registered!"
+			,"numbers": "Please fill in the field using only numbers."
+			,"registration_nr_exists": "User with this registration number is already registered."
+			,"pcode_exists": "User with this personal identification number is already registered!"
+			,"either": "Please indicate the property address!"
+			,"password": "Password must contain both letters and numbers"
+			,"password_length": "Password length must be %min% - %max% characters and include both letters and numbers"
+			,"password_oldpass_must_be_entered": "Please fill in the field."
+			,"agreement_borrower": "Please confirm that the provided information is accurate"
+			,"agreement_investor": "Please confirm that you accept the investment terms and conditions."
+			,"upload_limit": "Too many files selected"
+			,"equals": {
+				"password": "errors.equals.password"
+			}
+			,"payout": {
+				"not_enough_funds": "Your account does not have sufficient funds in the corresponding currency."
+			}
+		}
+		,form: {
+			password: {
+				show: "Show Password"
+				,hide: "Hide Password"
+                ,existing: "Current password"
+                ,new: "New Password"
+                ,title: "Password"
+			}
+			,multiple_choice: {
+				chosen: "Selected:%SELECTED%/%TOTAL%"
+				,check_uncheck_all: "Select/Clear All"
+			}
+		}
+		,misc: {
+			"next_tip": "Next"
+			,"prev_tip": "Previous"
+			,"close_tip": "close_tip"
+			,"pager_page_listing": "{page} of {totalPages}"
+		}
+		,tooltip: {
+            "investedSumAmount": "Principal that will be purchased %AMOUNT%"
+            ,"copy": "Copy"
+            ,"copySuccess": "Copied"
+		}
+	};
+</script><script>
+    var urlList = {
+        "investor": {
+            "basket_update": "/en/investor/basket-data/",
+            "basket_remove": "/en/loan/remove-from-basket/",
+            "autoinvest_toggle": "/en/auto-invest/toggle/",
+            "autoinvest_delete": "/en/auto-invest/delete/",
+            "autoinvest_summary": "/en/auto-invest/summary/",
+            "update_settings": "/en/investor/update-settings",
+            "update_notification_settings": "/en/investor/update-notification-settings",
+            "set_google_client_id": "/en/investor/set-google-client-id",
+            "load_scripts": "/en/tracking-scripts"
+        },
+        "registration": {
+            "validate": "/en/registration/validate",
+            "pre_register": "/en/registration/pre_register"
+        }
+    };
+</script><link rel="stylesheet" href="/css/372aaab-04ca345.css" /></head><body class="landing-page"><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVZNR3"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --><div id="main-wrapper"><div id="main-sub-wrapper"><div id="header-wrapper" class="header-wrapper"><div id="header-informative-row"><div class="m-container"><p>Introducing Mintos Ratings.  <a href="/en/mintos-ratings/" target="_blank">Find out more</a></p><button class="dismiss" type="button"></button></div></div><div id="header" class="header m-container"><a href="/en/" id="logo" class="header-logo"></a><ul id="top-nav-helper"><li class="main-nav-icon-container"><button type="button" class="button button-plain main-nav-icon js-navigation-toggle"><i class="fas fa-bars" aria-hidden="true"></i></button></li><li id="user-profile-button" class="toggle-nav-dropdown"
+                data-target="#user-profile-dropdown"><button type="button" name="MyAccountButton" class="button button-plain my-account-button"><i class="fas fa-user"></i> My Account
+                </button></li></ul></div></div><div id="nav-block" class="main-nav "><div id="nav-wrapper" class="main-nav-wrapper"><div id="nav-sub-wrapper" class="m-container"><ul id="main-nav" class="navigation menu main-nav-list "><li class="main-nav-item "><a href="/en/invest/" class="main-nav-link">
+                                Invest
+                            </a><button type="button" class="m-submenu-toggle-btn js-submenu-toggle"><i class="fas fa-angle-down" aria-hidden="true"></i><i class="fas fa-angle-up" aria-hidden="true"></i></button><div class="m-submenu"><div id="submenu-sub-wrapper" class="m-submenu-sub-wrapper m-container"><ul id="submenu" class="m-submenu-list"><li class="m-submenu-item"><a href="/en/invest/first-steps/" class="m-submenu-link ">
+                            Getting Started
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/invest/available-loans/" class="m-submenu-link ">
+                            Primary Market
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/invest/secondary-market/" class="m-submenu-link ">
+                            Secondary Market
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/invest/investor-protection/" class="m-submenu-link ">
+                            Investor Protection
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/invest/price-list/" class="m-submenu-link ">
+                            Fees
+
+                                                    </a></li></ul></div></div></li><li class="main-nav-item "><a href="/en/how-it-works/" class="main-nav-link">
+                                How It Works
+                            </a></li><li class="main-nav-item "><a href="/en/loan-originators/" class="main-nav-link">
+                                Loan Originators
+                            </a></li><li class="main-nav-item "><a href="/en/statistics/" class="main-nav-link">
+                                Statistics
+                            </a></li><li class="main-nav-item "><a href="/en/about-us/" class="main-nav-link">
+                                About Us
+                            </a><button type="button" class="m-submenu-toggle-btn js-submenu-toggle"><i class="fas fa-angle-down" aria-hidden="true"></i><i class="fas fa-angle-up" aria-hidden="true"></i></button><div class="m-submenu"><div id="submenu-sub-wrapper" class="m-submenu-sub-wrapper m-container"><ul id="submenu" class="m-submenu-list"><li class="m-submenu-item"><a href="/en/about-us/about-us/" class="m-submenu-link ">
+                            About Us
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/about-us/investor-relations/" class="m-submenu-link ">
+                            Investor Relations
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/about-us/careers/" class="m-submenu-link ">
+                            Careers
+
+                                                    </a></li><li class="m-submenu-item"><a href="/en/about-us/media-center/" class="m-submenu-link ">
+                            Media center
+
+                                                    </a></li></ul></div></div></li><li class="main-nav-item "><a href="/en/faq/" class="main-nav-link">
+                                FAQ
+                            </a></li><li class="main-nav-item"><a class="main-nav-link" href="https://blog.mintos.com/category/news/">
+                            Blog
+                        </a></li></ul></div></div></div><div class="drop-down-wrapper" id="user-profile-dropdown"><div class="drop-down m-container"><a href="javascript:;" class="drop-down-close">×</a><form id="login-form" action="/en/login/check" method="post" class="account-login-form m-container"><input type="hidden" name="_csrf_token" value="d5vlVmRx9oQoQafPnTvXE2jjspcH29QCY4DxqsfKkmM"/><div class="account-login"><input name="_username" type="email" class="submit-form-on-enter" placeholder="E-mail" value=""/><input name="_password" type="password" class="submit-form-on-enter u-mt-10" placeholder="Password"/><div class="account-actions u-pt-10"><button type="submit" class="btn btn-primary account-login-btn">
+                Log In
+            </button><a href="/en/password-reset-request/" id="forgot-password" class="account-password-reset u-pt-10">
+                Forgot password?
+            </a></div></div><div id="no-account" class="account-no-account"><h3 style="margin-bottom: 15px;">Not an investor yet?</h3>
+        Prospective investors can register
+ <a href="/en/investor-registration/">here</a>.
+    </div></form></div></div><script src="/js/cdd2c70-8e660b6.js"></script><div id="content" class="top-padded"><div id="main-block" class="hero"><div id="main-block-content" class="hero-content m-container"><h1 class="hero-title">Invest in loans and earn great returns</h1><p class="hero-description">With Mintos, you have an easy, transparent and diversified investment experience.</p><a href="/en/investor-registration/" class="hero-cta btn btn-primary em">
+                Start Investing
+            </a><div class="bottom-risk-content"><p>Investing your money puts your capital at risk and investors are not protected by any financial compensation scheme. <br/><a href="/en/invest/investor-protection/" target="_blank">Learn more</a> about our approach to risk.</p></div></div></div><div class="m-container"><div class="m-row m-features"><h2 class="m-features-heading heading2">Why invest through Mintos?</h2><div class="m-features-item m-features-item--diversity"><h3 class="m-features-title">Easy to Diversify</h3><p class="m-features-text" data-before-content="Easy to Diversify">
+                    You will find a wide breadth of loans to invest in on the Mintos marketplace. Diversify across loan types, loan originators, and different geographies. Reduce the impact of any single loan loss, and earn great returns.
+                </p></div><div class="m-features-item m-features-item--control"><h3 class="m-features-title">Full Control</h3><p class="m-features-text" data-before-content="Full Control">
+                    You can invest automatically using our Auto Invest tool or choose loans one by one. As you receive principal and interest payments from borrowers each month, the funds become available for you to reinvest or withdraw to your bank account.
+                </p></div><div class="m-features-item m-features-item--no-hassle"><h3 class="m-features-title">Hassle-Free</h3><p class="m-features-text" data-before-content="Hassle-Free">
+                    Investing in hundreds - or even thousands - of loans and building a well-diversified portfolio has never been easier. Set up Auto Invest according to your chosen investment strategy and let it automatically invest in corresponding loans.
+                </p></div><div class="m-features-item m-features-item--incentives"><h3 class="m-features-title">Aligned Incentives</h3><p class="m-features-text" data-before-content="Aligned Incentives">
+                    Every loan on the Mintos marketplace is pre-funded by its respective loan originator, which also keeps a certain percentage of the loan on its balance sheet. As a result, the incentives of loan originators and investors are aligned.
+                </p></div></div></div><div class="horizontal-bar stats"><div class="m-container"><div class="stats-item"><p>€ 1 015 327 155</p><p>invested in loans since 2015</p></div><div class="stats-item"><p>11.82%</p><p>average net annual return</p></div><div class="stats-item"><p>77 047</p><p>
+                    registered investors from 69 countries
+                </p></div></div></div><div class="m-container"><div id="loan-projects-wrapper"><h2 class="heading2">See currently-available loans</h2><ul class="tabs"><li class="active">
+                    Primary Market
+                    <span>104652</span></li><li>
+                    Secondary Market
+                    <span>139127</span></li></ul><ul id="loan-projects" class="mod-remove-sort-icon"><li class="purchasable-shares loan-projects-wrapper"><div id="loading-icon" class="loading empty"><i class="fas fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i></div><div class="m-mobile-button-block"></div><table id="primary-market-table"
+           class="sortable-table loan-table"
+           data-token="84HcC_m0buQqypdNOefgP_ln5WXJX7mdR19HKSuE6s4"
+            ><thead><tr class="name-row"><th data-sort-field="id"
+                class="sortable"><a href="javascript:;"><span>
+                        ID
+                    </span></a></th><th data-sort-field="issue_date"
+                class="sortable"><a href="javascript:;"><span>
+                        Issue Date
+                    </span></a></th><th data-sort-field="pledge"
+                class="sortable"><a href="javascript:;"><span>
+                        Loan Type
+                    </span></a></th><th data-sort-field="lender_group"
+                class="sortable global-align-center"><a href="javascript:;"><span>
+                        Loan <br>Originator
+                    </span></a></th><th data-sort-field="amount_cached"
+                class="sortable global-align-center"><a href="javascript:;"><span>
+                        Loan Amount/ <br>Balance
+                    </span></a></th><th data-sort-field="apr"
+                class="sortable global-align-center"><a href="javascript:;"><span>
+                        Borrower </br>APR
+                    </span></a></th><th data-sort-field="interest"
+                class="sortable global-align-center desc"><a href="javascript:;"><span>
+                        Interest <br>Rate
+                    </span></a></th><th data-sort-field="term"
+                class="sortable global-align-center"><a href="javascript:;"><span>
+                        Term
+                    </span></a></th><th data-sort-field="available_for_investment_cached"
+                class="sortable global-align-center"><a href="javascript:;"><span>
+                        Available for <br>Investment
+                    </span></a></th><th></th></tr><tr class="tooltip-row"><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="Mintos loan ID"
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="The date when the loan was issued to the borrower"
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="Loan Type"
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="Listed loan issuance company"
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This is the total loan amount and the current outstanding balance. If the borrower has already made payments, the amount will differ."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="APR is not always the most representative measure of the cost of borrowing, therefore, Mintos shows effective APR. This is a unified measure among all loan originators on the platform.
+To calculate the effective APR, the methodology called XIRR (extended internal rate of return) is used, which is further adjusted to exclude compounding effects.
+Effective APR is calculated based on the cash flows charged to the borrower which includes principal, interest and any fees charged on a single loan basis, whether they are compulsory or not or are charged by a third party."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This is the annual gross interest rate paid to the investor, excluding fees and estimated bad debts."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This is the period  (in months and days) left until the full repayment of the loan. The number in brackets indicates how many payments have already been made. This also includes outstanding past due payments for late loans."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This is the total amount available to investors for investment."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th></th></tr></thead><tbody><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/1904118-01">
+                        1904118-01
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/LT.png"
+     alt="Lithuania"
+     title="Lithuania" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    08.06.2017
+                </td><td class="m-loan-type">
+                    Business Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/A60C03E6-90C1-B098-AB2B-F9E842CB1E2B.png"
+                             title="Capitalia"
+                             alt="Capitalia"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 10 000 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 5 382</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    30.9%
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        12.0%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            Late
+        </span><div>
+            (12)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 112.64
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt"
+        ><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/4145355-01">
+                        4145355-01
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/MD.png"
+     alt="Moldova"
+     title="Moldova" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    25.07.2018
+                </td><td class="m-loan-type">
+                    Personal Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/C4B46FF8-A1CE-0F48-A248-C4FE43C4FE7D.png"
+                             title="Sebo"
+                             alt="Sebo"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 182 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 182</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    0.0%
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        8.0%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            Late
+        </span><div>
+            (1)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 58.72
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt secured"
+           data-placement="top"
+           data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. The parent company of Sebo will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"
+        ><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/3820173-01">
+                        3820173-01
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/PL.png"
+     alt="Poland"
+     title="Poland" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    29.06.2018
+                </td><td class="m-loan-type">
+                    Business Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/101A3B90-C989-76F5-F6EF-ABD58624FA1F.png"
+                             title="Aforti"
+                             alt="Aforti"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 25 745 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 24 507</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    76.8%
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        10.0%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            33 m. 23 d.
+        </span><div>
+            (2)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 84.28
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt secured"
+           data-placement="top"
+           data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. AFORTI will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"
+        ><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/3334565-01">
+                        3334565-01
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/SE.png"
+     alt="Sweden"
+     title="Sweden" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    06.03.2018
+                </td><td class="m-loan-type">
+                    Personal Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/0D51D2E5-E7A9-FE64-4085-6FC163B12066.png"
+                             title="Aasa"
+                             alt="Aasa"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 2 105 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 1 667</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    33.7%
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        8.0%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            18 m. 15 d.
+        </span><div>
+            (5)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 18.30
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt secured"
+           data-placement="top"
+           data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. AASA will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"
+        ><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/4652628-01">
+                        4652628-01
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/PL.png"
+     alt="Poland"
+     title="Poland" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    20.08.2018
+                </td><td class="m-loan-type">
+                    Personal Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/4D114023-BD45-CE30-99B7-69655E691E95.png"
+                             title="Creditstar"
+                             alt="Creditstar"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 535 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 535</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    195.7%
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        8.5%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            2 m. 13 d.
+        </span><div>
+            (0)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 11.29
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt secured"
+           data-placement="top"
+           data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. CREDITSTAR will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"
+        ><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/4543902-01">
+                        4543902-01
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/UA.png"
+     alt="Ukraine"
+     title="Ukraine" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    13.08.2018
+                </td><td class="m-loan-type">
+                    Short-Term Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/4366D034-6DF4-5492-C968-331F291DCF89.png"
+                             title="Dinero"
+                             alt="Dinero"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 149 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 149</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    475.6%
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        9.5%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            7 d.
+        </span><div>
+            (0)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 19.01
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt secured"
+           data-placement="top"
+           data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. DINERO will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"
+        ><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/4518179-01">
+                        4518179-01
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/LV.png"
+     alt="Latvia"
+     title="Latvia" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    13.03.2018
+                </td><td class="m-loan-type">
+                    Personal Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/1A382BFD-060E-D093-4F74-AE9F6F209059.PNG"
+                             title="VIZIA"
+                             alt="VIZIA"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 276 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 252</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    83.7%
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        9.0%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            18 m. 10 d.
+        </span><div>
+            (6)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 38.57
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt secured"
+           data-placement="top"
+           data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. VIZIA will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"
+        ><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/4236483-01">
+                        4236483-01
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/PL.png"
+     alt="Poland"
+     title="Poland" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    30.07.2018
+                </td><td class="m-loan-type">
+                    Short-Term Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/0098A960-6064-D470-F2EA-68D4EAAAF79C.png"
+                             title="Kuki.pl"
+                             alt="Kuki.pl"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 485 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 485</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    -
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        8.5%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            Late
+        </span><div>
+            (1)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 21.86
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt secured"
+           data-placement="top"
+           data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. KUKI.PL will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"
+        ><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/4671966-02">
+                        4671966-02
+                        <img src="/assets/vendor/flags/flags-iso/shiny/16/ES.png"
+     alt="Spain"
+     title="Spain" /></a></td><td class="m-loan-issued m-labeled-col" data-m-label="Issue Date">
+                    03.09.2018
+                </td><td class="m-loan-type">
+                    Short-Term Loan
+                </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/6AB67483-5CB9-EC29-8F91-07019CCFB1B1.png"
+                             title="EuroOne"
+                             alt="EuroOne"
+                             class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-amount m-labeled-col" data-m-label="Loan Amount/ Balance"><div class="money-splitter"><span class="m-loan-amount-initial"><span title="EUR">€</span> 300 /</span><div class="m-loan-amount-remaining"><span title="EUR">€</span> 300</div></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                    -
+                </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                        11.0%
+                </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            28 d.
+        </span><div>
+            (0)
+        </div></td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Available for Investment"><span title="EUR">€</span> 14.38
+                </td><td class="actions m-loan-actions"><a href="javascript:;"
+           class="btn btn-primary open-login-prompt secured"
+           data-placement="top"
+           data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. EUROONE will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"
+        ><span>Invest</span></a></td></tr></tbody></table><a href="/en/invest/available-loans/">
+                        Show all 104652 loans
+                    </a></li><li><div id="loading-icon" class="loading empty"><i class="fas fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i></div><div class="m-mobile-button-block"></div><table id="secondary-market-table"
+           class="sortable-table loan-table"
+           data-token="84HcC_m0buQqypdNOefgP_ln5WXJX7mdR19HKSuE6s4"
+    ><thead><tr class="name-row"><th data-sort-field="id" class="sortable"><a href="javascript:;"><span>
+                        ID
+                    </span></a></th><th data-sort-field="pledge" class="sortable"><a href="javascript:;"><span>
+                        Loan Type
+                    </span></a></th><th data-sort-field="lender_group" class="sortable global-align-center"><a href="javascript:;"><span>
+                        Loan <br>Originator
+                    </span></a></th><th data-sort-field="apr" class="sortable global-align-center"><a href="javascript:;"><span>
+                        Borrower </br>APR
+                    </span></a></th><th data-sort-field="interest" class="sortable global-align-center"><a href="javascript:;"><span>
+                        Interest <br>Rate
+                    </span></a></th><th data-sort-field="term" class="sortable global-align-center"><a href="javascript:;"><span>
+                        Term
+                    </span></a></th><th data-sort-field="status" class="sortable global-align-center"><a href="javascript:;"><span>
+                        Status
+                    </span></a></th><th data-sort-field="ytm" class="sortable global-align-center"><a href="javascript:;"><span>
+                        YTM
+                    </span></a></th><th data-sort-field="available_for_investment_cached" class="sortable global-align-center desc"><a href="javascript:;"><span>
+                        Available for <br>Investment
+                    </span></a></th><th data-sort-field="premium" class="sortable global-align-center"><a href="javascript:;"><span>
+                        Price / <br>Discount
+                    </span></a></th><th></th></tr><tr class="tooltip-row"><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="Mintos loan ID"
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="Loan Type"
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="Listed loan issuance company"
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="APR is not always the most representative measure of the cost of borrowing, therefore, Mintos shows effective APR. This is a unified measure among all loan originators on the platform.
+To calculate the effective APR, the methodology called XIRR (extended internal rate of return) is used, which is further adjusted to exclude compounding effects.
+Effective APR is calculated based on the cash flows charged to the borrower which includes principal, interest and any fees charged on a single loan basis, whether they are compulsory or not or are charged by a third party."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This is the annual gross interest rate paid to the investor, excluding fees and estimated bad debts."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This is the period  (in months and days) left until the full repayment of the loan. The number in brackets indicates how many payments have already been made. This also includes outstanding past due payments for late loans."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This column represents payment status, i.e. whether the borrower makes payments according to schedule."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="YTM (yield-to-maturity) is the expected rate of return of an investment, expressed as annual rate, assuming that an investment in the loan is held till maturity. YTM calculations include the following assumptions:
+
+1) investment in the loan is made at the quoted price, i.e. including a possible premium or discount;
+2) all future payments will be done according to the schedule, i.e. the calculations does not include any default expectations;
+3) no service fee is included, i.e. YTM is comparable to the nominal interest rate of loan;
+4) late loan payments are expected to be received the next day."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This is the total amount available to investors for investment."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th><i class="fas fa-info-circle tooltip-color-gray "
+       data-tooltip="This is a discount or premium added by investors selling their fractions of the loan in the secondary market. The maximum allowed premium is 20% and the maximum discount is -99%. For example, if the fraction of loan is worth EUR 20 and a 10% premium is added, an investor may buy it for EUR 22, thus paying more than the outstanding principal. However, if a discount is added, the fraction of the loan may be bought for less."
+       data-placement="bottom"
+       data-placement-on-mobile="bottom"
+       data-theme="dark"
+       data-tooltip-trigger="hover,click"></i></th><th></th></tr></thead><tbody><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/1630682-01">
+                            1630682-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/BG.png"
+     alt="Bulgaria"
+     title="Bulgaria" /></a></td><td class="m-loan-type">
+                        Personal Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/AE42ACB6-AC5E-B5BD-4F4A-EB7AA1F2AAB9.png"
+                                     title="CashCredit"
+                                     alt="CashCredit"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        36.0%
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    11.0%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            5 m. 23 d.
+        </span><div>
+            (12)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Current
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    9.3%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 4.11
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 4.13</span><div class="m-loan-premium-change color-red ">
+                            (<span class="plus-sign-prefix">0.5%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt secured"
+           data-placement="top" data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. CASHCREDIT will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/2061871-01">
+                            2061871-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/FI.png"
+     alt="Finland"
+     title="Finland" /></a></td><td class="m-loan-type">
+                        Personal Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/4D114023-BD45-CE30-99B7-69655E691E95.png"
+                                     title="Creditstar"
+                                     alt="Creditstar"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        80.8%
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    11.0%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            3 m. 5 d.
+        </span><div>
+            (8)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Current
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    7.6%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 1.21
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 1.21</span><div class="m-loan-premium-change color-red ">
+                            (<span class="plus-sign-prefix">0.5%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt secured"
+           data-placement="top" data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. CREDITSTAR will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/2518010-01">
+                            2518010-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/BW.png"
+     alt="Botswana"
+     title="Botswana" /></a></td><td class="m-loan-type">
+                        Personal Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/A5F29327-E792-0BE5-585B-A9E1A5E752F6.png"
+                                     title="ExpressCredit"
+                                     alt="ExpressCredit"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        63.2%
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    15.0%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            38 m. 15 d.
+        </span><div>
+            (9)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Current
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    8.4%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 14.57
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 16.60</span><div class="m-loan-premium-change color-red ">
+                            (<span class="plus-sign-prefix">14.0%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt secured"
+           data-placement="top" data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. EXPRESSCREDIT will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/4813925-01">
+                            4813925-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/CO.png"
+     alt="Colombia"
+     title="Colombia" /></a></td><td class="m-loan-type">
+                        Short-Term Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/C171729C-E53E-6D97-5005-6F7A5B568AFE.png"
+                                     title="Rapicredit"
+                                     alt="Rapicredit"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        470.6%
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    11.5%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            11 d.
+        </span><div>
+            (0)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Current
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    8.2%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 45.76
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 45.81</span><div class="m-loan-premium-change color-red ">
+                            (<span class="plus-sign-prefix">0.1%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt secured"
+           data-placement="top" data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. RAPICREDIT will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/754134-01">
+                            754134-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/PL.png"
+     alt="Poland"
+     title="Poland" /></a></td><td class="m-loan-type">
+                        Business Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/101A3B90-C989-76F5-F6EF-ABD58624FA1F.png"
+                                     title="Aforti"
+                                     alt="Aforti"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        -
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    11.5%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            6 m. 22 d.
+        </span><div>
+            (17)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Current
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    9.3%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 13.95
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 14.05</span><div class="m-loan-premium-change color-red ">
+                            (<span class="plus-sign-prefix">0.7%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt secured"
+           data-placement="top" data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. AFORTI will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/3943555-01">
+                            3943555-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/ES.png"
+     alt="Spain"
+     title="Spain" /></a></td><td class="m-loan-type">
+                        Mortgage Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/268F51EE-D0CD-438C-BE06-5A34FC5D2B55.png"
+                                     title="Fireof"
+                                     alt="Fireof"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        14.5%
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    8.0%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            31 m. 4 d.
+        </span><div>
+            (3)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Current
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    8.0%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 60.00
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 59.94</span><div class="m-loan-premium-change color-green">
+                            (<span class="">-0.1%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt"><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/1573042-01">
+                            1573042-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/BG.png"
+     alt="Bulgaria"
+     title="Bulgaria" /></a></td><td class="m-loan-type">
+                        Personal Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/7FDB7757-7A37-6685-E4D9-7EF3AB5AC410.png"
+                                     title="ITF Group"
+                                     alt="ITF Group"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        41.1%
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    10.2%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            16 d.
+        </span><div>
+            (11)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Current
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    5.7%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 0.60
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 0.60</span><div class="m-loan-premium-change color-red ">
+                            (<span class="plus-sign-prefix">0.2%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt secured"
+           data-placement="top" data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. ITF GROUP will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/1432893-01">
+                            1432893-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/AL.png"
+     alt="Albania"
+     title="Albania" /></a></td><td class="m-loan-type">
+                        Personal Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/E457CFAD-740A-929C-02AF-84D56B8D376A.png"
+                                     title="IuteCredit"
+                                     alt="IuteCredit"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        -
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    10.0%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            43 d.
+        </span><div>
+            (12)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Current
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    3.6%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 1.54
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 1.55</span><div class="m-loan-premium-change color-red ">
+                            (<span class="plus-sign-prefix">0.5%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt secured"
+           data-placement="top" data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. IUTECREDIT will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"><span>Invest</span></a></td></tr><tr class="m-loan-entry"><td class="loan-id-col m-loan-id"><a target="_blank" href="/en/680533-01">
+                            680533-01
+                            <img src="/assets/vendor/flags/flags-iso/shiny/16/PL.png"
+     alt="Poland"
+     title="Poland" /></a></td><td class="m-loan-type">
+                        Personal Loan
+                    </td><td class="icon m-loan-originator"><div class="lender-icon-wrapper"><img src="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/0D51D2E5-E7A9-FE64-4085-6FC163B12066.png"
+                                     title="Aasa"
+                                     alt="Aasa"
+                                     class="icon icon-loan-originator fa" /></div></td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Borrower APR">
+                        75.8%
+                    </td><td class="global-align-right m-loan-interest m-labeled-col" data-m-label="Interest Rate">
+                                                    9.5%
+                                            </td><td class="global-align-right m-loan-term m-labeled-col" data-m-label="Term"><span>
+            5 m. 26 d.
+        </span><div>
+            (18)
+        </div></td><td class="global-align-left m-labeled-col" data-m-label="Status">
+                        Grace <br> Period
+                    </td><td class="global-align-right m-labeled-col" data-m-label="YTM">
+                                                    2.6%
+                                            </td><td class="global-align-right m-labeled-col" data-m-label="Available for Investment"><span title="EUR">€</span> 5.00
+                    </td><td class="global-align-right m-labeled-col mod-highlighted" data-m-label="Price / Discount"><span><span title="EUR">€</span> 5.10</span><div class="m-loan-premium-change color-red ">
+                            (<span class="plus-sign-prefix">2.0%</span>)
+                        </div></td><td class="actions m-loan-actions"><a href="javascript:;" class="btn btn-primary open-login-prompt secured"
+           data-placement="top" data-theme="dark"
+           data-tooltip="            This loan comes with a buyback guarantee. AASA will buy back the loan from investors if it becomes 60 or more days delinquent.
+    "
+           data-tooltip-trigger="hover"><span>Invest</span></a></td></tr></tbody></table><a href="/en/invest/secondary-market/">
+                        Show all 139127 secondary market offers
+                    </a></li></ul></div></div><div class="horizontal-bar press-bar"><div class="m-container js-carousel-container"><div class="press"><h2 class="heading2">As featured in</h2><div id="press1" class="press-section js-carousel-content-block"><a><img src="/bundles/mintosfrontend/images/landing-page/press/forbes.png"></a><a href="http://techcrunch.com/search/mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/techcrunch.png"></a><a href="http://www.altfi.com/article/1763_latvian_p2p_lender_raises_eur2m_in_seed_funding" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/altfi.png"></a><a href="http://www.crowdfundinsider.com/?s=mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/crowdfund.png"></a><a href="http://arcticstartup.com/search?search=mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/arctic.png"></a></div><div id="press2" class="press-section js-carousel-content-block"><a href="http://www.aripaev.ee/search?q=mintos&p=4&period=2015-01-01Z,2020-01-01Z" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/aripaev.png"></a><a href="http://www.eu-startups.com/?s=mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/eustartups.png"></a><a href="http://fortune.com/2016/02/23/term-sheet-tuesday-february-23" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/fortune.png"></a><a href="http://www.labsoflatvia.com/startups/mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/labs.png"></a><a href="http://www.delfi.lv/meklet/?q=mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/delfi.png"></a></div><div id="press3" class="press-section js-carousel-content-block"><a href="http://www.db.lv/search?q%5Bq%5D=mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/bizness.png"></a><a href="http://www.lendit.com/europe/2015/sponsors/mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/lendit.png"></a><a href="http://rus.db.lv/search?q%5Bq%5D=mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/rusdb.png"></a><a href="http://www.nzz.ch/suche?form%5Bq%5D=mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/nzz.png"></a><a href="http://vz.lt/section/?template=search&search=mintos" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/press/verslo.png"></a></div></div><div class="col-md-12 carousel text-center"><button type="button" class="carousel-dot js-dot" data-id="press1"><i class="fas fa-circle" aria-hidden="true"></i></button><button type="button" class="carousel-dot js-dot" data-id="press2"><i class="fas fa-circle" aria-hidden="true"></i></button><button type="button" class="carousel-dot js-dot" data-id="press3"><i class="fas fa-circle" aria-hidden="true"></i></button></div></div></div><div class="m-container"><div class="m-row"><div class="reviews js-carousel-container"><h2 class="heading2">What our investors say</h2><div id="review1" class="review js-carousel-content-block"><h4 class="review-lead">Best p2p lending platform I​ ha​ve tried so far</h4><div class="review-text"><p>I&#039;ve reviewed tens of p2p lending platforms out there, personally tried a few of them. Mintos is by far the most simple and straightforward platform that works exactly as expected. I now transfer funds from all the other platforms to Mintos only.</p></div><div class="review-author-rating"><strong>Joooc</strong></div><div><div class="review-rating"><div class="review-score5"></div></div><div class="review-trustpilot">
+                Reviews from:
+               <a href="https://www.trustpilot.com/review/mintos.com" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/landing_trustpilot_logo.png"></a></div></div></div><div id="review2" class="review js-carousel-content-block"><h4 class="review-lead">​Simple, intuitive and informative</h4><div class="review-text"><p>Mintos provides a great experience in using their p2p platform. Data about investments are presented the way an investor would like to see them. Highly recommended!</p></div><div class="review-author-rating"><strong>Dmitrij</strong></div><div><div class="review-rating"><div class="review-score5"></div></div><div class="review-trustpilot">
+                Reviews from:
+               <a href="https://www.trustpilot.com/review/mintos.com" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/landing_trustpilot_logo.png"></a></div></div></div><div id="review3" class="review js-carousel-content-block"><h4 class="review-lead">Amazing p2p lending platform</h4><div class="review-text"><p>Mintos is very simple to use. You can easily control the amount of loans, interest and risk. I also like its other great features - Auto Invest and the secondary market. Communication with support is really fast.</p></div><div class="review-author-rating"><strong>Lukáš</strong></div><div><div class="review-rating"><div class="review-score5"></div></div><div class="review-trustpilot">
+                Reviews from:
+               <a href="https://www.trustpilot.com/review/mintos.com" target="_blank"><img src="/bundles/mintosfrontend/images/landing-page/landing_trustpilot_logo.png"></a></div></div></div><div class="col-md-12 carousel text-center"><button type="button" class="carousel-dot js-trustpilot-dot" data-id="review1"><i class="fas fa-circle" aria-hidden="true"></i></button><button type="button" class="carousel-dot js-trustpilot-dot" data-id="review2"><i class="fas fa-circle" aria-hidden="true"></i></button><button type="button" class="carousel-dot js-trustpilot-dot" data-id="review3"><i class="fas fa-circle" aria-hidden="true"></i></button></div></div><div class="awards js-carousel-container"><h2 class="heading2">Our awards</h2><div id="awards1" class="press-awards-section js-carousel-content-block"><a class="altfipeople2017 awards-item"
+                                                  href="https://blog.mintos.com/mintos-wins-peoples-choice-2017-altfi-awards/"
+                                              target="_blank"></a><a class="altfipeoples awards-item"></a><a class="altfialternative awards-item"></a></div><div id="awards2" class="press-awards-section js-carousel-content-block"><a class=" altfiaggregator awards-item"></a><div class="fintech100 awards-item"></div><div class="rietumu awards-item"></div></div><div id="awards3" class="press-awards-section js-carousel-content-block"><div class="altfi2015 awards-item"></div></div><div class="carousel"><button type="button" class="carousel-dot js-awards-dot" data-id="awards1"><i class="fas fa-circle" aria-hidden="true"></i></button><button type="button" class="carousel-dot js-awards-dot" data-id="awards2"><i class="fas fa-circle" aria-hidden="true"></i></button><button type="button" class="carousel-dot js-awards-dot" data-id="awards3"><i class="fas fa-circle" aria-hidden="true"></i></button></div></div></div></div></div></div><link rel="stylesheet" href="/css/2234c93-d87cdc4.css"/><div id="cookie-agreement" class="js-cookie-agreement"><div class="cookie-agreement-wrapper"><div class="message-wrapper"><span class="message">Please be informed that the Mintos portal uses cookies. Cookies collect information about site visits, helps to improve and ensure the functioning of the portal and offer ads of relevant content. By continuing to use the portal, you acknowledge that you are informed of the use of cookies. Additional cookie information is available in the <a href="https://www.mintos.com/en/cookie-policy/" target="_blank">Cookie Policy</a>.</span></div><div class="accept-wrapper"><button class="accept btn btn-default" type="button">I agree</button></div><button class="dismiss fas fa-times" type="button"></button></div></div><div id="footer-wrapper" class="footer footer-wrapper"><div id="footer" class="footer-container"><div class="footer-top"><div class="m-container"><div class="footer-column"><a class="footer-logo" href="/"><img src="/assets/images/mintos-inverted.png" alt="Mintos logo"></a><ul><li><a href="/en/invest/first-steps/">
+                                For Investors
+                            </a></li><li><a href="/en/for-alternative-lending-companies/">
+                                For Lending Companies
+                            </a></li><li><a href="/en/join-our-affiliate-program-and-earn-money/">
+                                Affiliate Program
+                            </a></li></ul></div><div class="footer-column"><h3>Invest</h3><ul><li><a href="/en/invest/first-steps/">
+                                Getting Started
+                            </a></li><li><a href="/en/loan-originators/">
+                                Loan Originators
+                            </a></li><li><a href="/en/invest/available-loans/">
+                                Primary Market
+                            </a></li><li><a href="/en/invest/secondary-market/">
+                                Secondary Market
+                            </a></li><li><a href="/en/statistics/">
+                                Statistics
+                            </a></li><li><a href="/en/invest/investor-protection/">
+                                Investor Protection
+                            </a></li><li><a href="/en/invest/price-list/">
+                                Fees
+                            </a></li></ul></div><div class="footer-column"><h3>Company</h3><ul><li><a href="/en/about-us/about-us/">
+                                About Us
+                            </a></li><li><a href="/en/how-it-works/">
+                                How It Works
+                            </a></li><li><a href="/en/about-us/investor-relations/">
+                                Investor Relations
+                            </a></li><li><a href="/en/about-us/careers/">
+                                Careers
+                            </a></li><li><a href="/en/about-us/media-center/">
+                                Media Center
+                            </a></li><li><a href="https://blog.mintos.com/">
+                                Blog
+                            </a></li></ul></div><div class="footer-column"><h3>Help &amp; Support</h3><ul><li><a href="tel:+44 157 893 0033"><img src="/assets/vendor/flags/flags-iso/flat/16/GB.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+44 157 893 0033
+                            </a></li><li><a href="tel:+43 720 884 044"><img src="/assets/vendor/flags/flags-iso/flat/16/DE.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+43 720 884 044
+                            </a></li><li><a href="tel:+371 66 164 466"><img src="/assets/vendor/flags/flags-iso/flat/16/LV.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+371 66 164 466
+                            </a></li><li><a href="tel:+371 66 164 488"><img src="/assets/vendor/flags/flags-iso/flat/16/RU.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+371 66 164 488
+                            </a></li><li><a href="tel:+420 538 880 188 "><img src="/assets/vendor/flags/flags-iso/flat/16/CZ.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+420 538 880 188
+                            </a></li><li><a href="tel:+48 22 124 41 00 "><img src="/assets/vendor/flags/flags-iso/flat/16/PL.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+48 22 124 41 00
+                            </a></li><li><a href="tel:+34 518 899 677"><img src="/assets/vendor/flags/flags-iso/flat/16/ES.png"
+                                     alt="Mintos"
+                                />
+                                &nbsp&nbsp+34 518 899 677
+                            </a></li><li><a class="icon support-email" href="/cdn-cgi/l/email-protection#8ffcfaffffe0fdfbcfe2e6e1fbe0fca1ece0e2">
+                                <span class="__cf_email__" data-cfemail="4a393f3a3a25383e0a2723243e253964292527">[email&#160;protected]</span>
+                            </a></li><li><a class="icon faq-link" href="/en/faq/">
+                                FAQ
+                            </a></li></ul></div><div class="footer-column"><h3>Follow Mintos</h3><ul><li><a id="facebook"
+                               class="icon"
+                               href="https://www.facebook.com/MintosMarketplace"
+                               target="_blank">
+                                Facebook
+                            </a></li><li><a id="twitter"
+                               class="icon"
+                               href="https://twitter.com/MintosPlatform"
+                               target="_blank">
+                                Twitter
+                            </a></li><li><a id="linked-in"
+                               class="icon"
+                               href="https://www.linkedin.com/company/mintos"
+                               target="_blank">
+                                LinkedIn
+                            </a></li><li><a id="google-plus"
+                               class="icon"
+                               href="//plus.google.com/115951696607274735613"
+                               target="_blank">
+                                Google Plus
+                            </a></li><li><a id="youtube"
+                               class="icon"
+                               href="//youtube.com/channel/UCb3_KUaR6LvLf9vRXz3h30w"
+                               target="_blank">
+                                YouTube
+                            </a></li></ul></div><div class="footer-column"><h3>Mintos Office</h3><ul><li><p class="office-address">AS Mintos Marketplace<br>
+Reg. No. 40103903643<br>
+Skanstes 50<br>
+Riga, LV-1013<br>
+Latvia</p></li></ul></div></div></div><div class="footer-bottom"><div class="m-container"><h3>Member of</h3><div class="m-member-of"><a href="https://www.ahk-balt.org/mitglieder/firmendatenbank/firmendatenbankdetails/?tx_cpsfmp_companymainplugin%5Bswords%5D=mintos&tx_cpsfmp_companymainplugin%5Bindustries%5D=0&tx_cpsfmp_companymainplugin%5Bcountries%5D=0&tx_cpsfmp_companymainplugin%5Bregions%5D=0&tx_cpsfmp_companymainplugin%5Bzips%5D=&tx_cpsfmp_companymainplugin%5Bcities%5D=&tx_cpsfmp_companymainplugin%5Bahkmember%5D=&submit=&tx_cpsfmp_companymainplugin%5Bcompany%5D=17160&tx_cpsfmp_companymainplugin%5Baction%5D=show&tx_cpsfmp_companymainplugin%5Bcontroller%5D=Company&cHash=6da5f6d8915d0a326175f0d6033861b3"
+                       class="m-member-of-logo" target="_blank"><img src="/assets/images/ahk-footer-logo.jpg"
+                             title="The German-Baltic Chamber of Commerce in Estonia, Latvia, Lithuania (AHK Baltic States)"></a><a href="https://www.chamber.lv/" class="m-member-of-logo mod-has-pad" target="_blank"><img src="/assets/images/ltrk-logo.png"
+                             title="Latvian Chamber of Commerce and Industry (LCCI)"></a><a href="http://www.lafpa.lv/" class="m-member-of-logo mod-has-pad" target="_blank"><img src="/assets/images/lafpa-logo.png"
+                             title="The Alternative Financial Services Association of Latvia"></a><a href="http://4fintech.org/" class="m-member-of-logo mod-has-pad ml-m4" target="_blank"><img src="/assets/images/EFF.png" title="European Fintech Forum (EFF)"></a><a href="https://asociacionfintech.es/" class="m-member-of-logo aefi" target="_blank"><img src="/assets/images/AEFI.png"
+                             title="Spanish Fintech and Insurtech Association"></a></div><div class="m-small-links"><a class="footer-link has-hover"
+                       href="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/4059F754-16F1-B5CA-E34A-45B2855B195E.pdf"
+                       target="_blank">
+                        User Agreement
+                    </a><a class="footer-link has-hover"
+                       href="/en/privacy-policy/"
+                       target="_blank">
+                        Privacy policy
+                    </a><a class="footer-link has-hover"
+                       href="https://s3.eu-central-1.amazonaws.com/mintos-prod-public-files/F7B8B3B9-8DDB-D70F-3EA2-1EA54E08796F.pdf"
+                       target="_blank">
+                        Refer-a-Friend T&amp;C
+                    </a></div><div class="footnote"><p>
+                        © 2018 All rights reserved.
+                        By using our website you agree to the use of cookies in accordance with our <a href="/en/cookie-policy/">cookies policy.</a></p></div><div id="lang-select-wrapper"><div id="current-lang"><img src="/assets/vendor/flags/flags-iso/flat/16/GB.png"
+                             alt="English"
+                        />
+                        English
+                    </div><ul id="lang-select"><li><a href="/cs/"><img src="/assets/vendor/flags/flags-iso/flat/16/CZ.png"
+                                             alt="Český"
+                                        />
+                                        Český
+                                    </a></li><li><a href="/de/"><img src="/assets/vendor/flags/flags-iso/flat/16/DE.png"
+                                             alt="Deutsch"
+                                        />
+                                        Deutsch
+                                    </a></li><li><a href="/es/"><img src="/assets/vendor/flags/flags-iso/flat/16/ES.png"
+                                             alt="Español"
+                                        />
+                                        Español
+                                    </a></li><li><a href="/lv/"><img src="/assets/vendor/flags/flags-iso/flat/16/LV.png"
+                                             alt="Latviešu"
+                                        />
+                                        Latviešu
+                                    </a></li><li><a href="/pl/"><img src="/assets/vendor/flags/flags-iso/flat/16/PL.png"
+                                             alt="Polski"
+                                        />
+                                        Polski
+                                    </a></li><li><a href="/ru/"><img src="/assets/vendor/flags/flags-iso/flat/16/RU.png"
+                                             alt="Русский"
+                                        />
+                                        Русский
+                                    </a></li></ul></div></div></div></div></div></div><div class="modal fade" id="multi-purpose-modal" tabindex="-1" role="dialog" aria-labelledby="multi-purpose-modal-title" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button><h4 class="modal-title" id="multi-purpose-modal-title"></h4></div><div class="modal-body"></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/a275295-10deffa.js"></script><script src="/js/70def04-56392d0.js"></script><script src="/js/e29c7e9-22af920.js"></script><script src="/js/305ad5c-09d9a29.js"></script><script>/*<![CDATA[*/
+        window.zEmbed || function (e, t) {
+            var n, o, d, i, s, a = [], r = document.createElement("iframe");
+            window.zEmbed = function () {
+                a.push(arguments)
+            }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document;
+            try {
+                o = s
+            } catch (c) {
+                n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s
+            }
+            o.open()._l = function () {
+                var o = this.createElement("script");
+                n && (this.domain = n), o.id = "js-iframe-async", o.src = e, this.t = +new Date, this.zendeskHost = t, this.zEQueue = a, this.body.appendChild(o)
+            }, o.write('<body onload="document._l();">'), o.close()
+        }("//assets.zendesk.com/embeddable_framework/main.js", "mintos.zendesk.com");
+        /*]]>*/</script></body></html>

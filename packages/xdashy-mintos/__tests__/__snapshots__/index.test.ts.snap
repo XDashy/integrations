@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mintos login and get the user profile overview 1`] = `
+Object {
+  "bad_debt": -9.1,
+  "campaign_rewards": 0,
+  "interest": 300.88,
+  "late_payment_fees": 0.89,
+  "net_annual_return": 11.3,
+  "secondary_market_transactions": 0,
+  "service_fees": 0,
+  "total_profit": 232.21,
+}
+`;
+
+exports[`Mintos login and get the user profile overview 2`] = `
+Object {
+  "available_funds": 0.01,
+  "invested_funds": 2012.2,
+  "total": 2012.21,
+}
+`;
+
+exports[`parsing profile overview parse net annual return overview 1`] = `
+Object {
+  "bad_debt": -6.93,
+  "campaign_rewards": 45,
+  "interest": 237.63,
+  "late_payment_fees": 0.3,
+  "net_annual_return": 10.11,
+  "secondary_market_transactions": 0,
+  "service_fees": 0,
+  "total_profit": 231,
+}
+`;
+
+exports[`parsing profile overview parse success case 1`] = `
+Object {
+  "available_funds": 0.01,
+  "invested_funds": 1510.99,
+  "total": 1511,
+}
+`;
